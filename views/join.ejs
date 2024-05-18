@@ -1,0 +1,51 @@
+<%- include('partials/header.ejs') %>
+    
+    <div class="joinbody">
+        <div class="j_container">
+            <div class="form">
+                <form action="/joinsubmit" method="post">
+                    <label for="department">Department</label>
+                    <select id="department" name="department" required>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Electrical Engineering">Electrical Engineering</option>
+                        <option value="Mechanical Engineering">Mechanical Engineering</option>
+                        <option value="Smart Manufacturing ">Smart Manufacturing</option>
+                        <option value="Electronics and Communications">Electronics and Communications</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                    <a href="/join" type="button" , class="btn btn-outline-primary">showall</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="font">
+    <p>Welcome <span><%= name %></span></p>
+    <p>These are Some of the hosted projects for you to join </p>
+    </div>
+    
+    <div class="projectcontainer">
+       <% if(locals.department) { %>
+        <% Project.forEach((proj)=> { %>
+            <div class="j_project">
+                <p>Project Name: <br> <%= proj.p_name %> </p>
+                <p>Project Description: <br><%= proj.description %> </p>
+                <p>Project Host UserID: <br> <%= proj.uid %></p>
+                <a href="/projectdetail?id=<%= proj.pid %>&name=<%= proj.p_name %>&desc=<%= encodeURIComponent(proj.description) %>&size=<%= proj.team_size %>&preq=<%= proj.prereq %>&dept=<%= proj.dept %>&uid=<%= proj.uid %>" type="button" class="button-retro">More Details</a>
+            </div>
+        <% }) %>
+        <% }else{ %>
+
+            <% Project.forEach((proj)=> { %>
+                <div class="j_project">
+                    <p>Project Name: <br> <%= proj.p_name %> </p>
+                    <p>Project Description: <br><%= proj.description %> </p>
+                    <p>Project Host UserID: <br> <%= proj.uid %></p>
+                    <a href="/projectdetail?id=<%= proj.pid %>&name=<%= proj.p_name %>&desc=<%= encodeURIComponent(proj.description) %>&size=<%= proj.team_size %>&preq=<%= proj.prereq %>&dept=<%= proj.dept %>&uid=<%= proj.uid %>" type="button" class="button-retro">More Details</a>
+                </div>
+            <% }) %>
+        <% } %>
+            
+    </div>
+    
+<%- include('partials/footer.ejs') %>

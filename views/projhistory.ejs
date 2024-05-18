@@ -1,0 +1,30 @@
+<%- include("partials/header.ejs") %>
+
+    
+    <h2 class="font1">Project history</h2>
+    
+    <div class="historybody">
+        
+        <div class="j_container">
+            <a href="/Projectjoined" type="button" class="button-3d">Project I have/had contributed </a>
+            <a href="/Projecthosted" type="button" class="button-3d">Project I have hosted</a>
+        </div>
+        
+    </div>
+
+    <div class="projectcontainer">
+        <% if (locals.Project) {%>
+            <% Project.forEach((proj)=> { %>
+                <div class="j_project">
+                    <p>Project Name: <br> <%= proj.p_name %> </p>
+                    <p>Project Description: <br><%= proj.description %> </p>
+                    <p>Project UserID: <br> <%= proj.uid %></p>
+                </div>
+            <% }) %>
+        <% }else{ %>
+            <h2>select options above </h2>
+            <% } %>
+          
+    </div>
+
+ <%- include("partials/footer.ejs") %>

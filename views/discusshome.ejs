@@ -1,0 +1,53 @@
+<%- include('partials/header.ejs') %>
+<div class="discussbody">
+    <div class="d_container">
+        <div class="form">
+            <form action="/discusssubmit" method="post">
+                <label for="department">Department</label>
+                <select id="department" name="department" required>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Electrical Engineering">Electrical Engineering</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Smart Manufacturing ">Smart Manufacturing</option>
+                    <option value="Electronics and Communications">Electronics and Communication</option>
+                </select>
+                <label for="search">Topic</label>
+                <input type="text" placeholder="search" id="topic" name="topic" required>
+                <button type="submit">Submit</button>
+                <div class="flex">
+                    <a href="/ask" type="button" class="button-3d">Ask A Question</a>
+                    <a href="/discusshistory" type="button" class="button-3d">Discuss History</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="questioncontainer">
+    <p>Welcome <span><%= name %></span> Here are some questions asked by users</p>
+    <% if (locals.department) { %>
+        <% Question.forEach((Ques) => { %>
+            <div class="question">
+                <p>Question ID :<%= Ques.q_id %></p>
+                <p>Title: <%= Ques.title %></p>
+                <p>Question Description: <%= Ques.description %></p>
+                <p>Department: <%= Ques.department %></p>
+                <p>Topic: <%= Ques.topic %></p>
+                <p>Userid: <%= Ques.userid %></p>
+                <a href="/questionDetail?id=<%= Ques.q_id %>&title=<%= Ques.title %>&topic=<%= Ques.topic %>&description=<%= encodeURIComponent(Ques.description) %>" type="button" class="button-retro">Answer Question</a>
+            </div>
+        <% }) %>
+    <% } else { %>
+        <% Question.forEach((Ques) => { %>
+            <div class="question">
+                <p>Question ID :<%= Ques.q_id %></p>
+                <p>Title: <%= Ques.title %></p>
+                <p>Question Description: <%= Ques.description %></p>
+                <p>Department: <%= Ques.department %></p>
+                <p>Topic: <%= Ques.topic %></p>
+                <p>Userid: <%= Ques.userid %></p>
+                <a href="/questionDetail?id=<%= Ques.q_id %>&title=<%= Ques.title %>&topic=<%= Ques.topic %>&description=<%= encodeURIComponent(Ques.description) %> " type="button" class="button-retro">Answer Question</a>
+            </div>
+        <% }) %>
+    <% } %>
+</div>
+<%- include('partials/footer.ejs') %>

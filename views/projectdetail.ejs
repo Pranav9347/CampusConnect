@@ -1,0 +1,16 @@
+<%- include('partials/header.ejs') %>
+<div class="questioncontainer">
+    <div class="question">
+        <p><strong>Project ID:</strong> <%= id %></p>
+        <p><strong>Project Name:</strong><%= name %></p>
+        <p><strong>Description:</strong><%= desc%></p>
+        <p><strong>Team Max Size:</strong> <%= size %></p>
+        <p><strong>Prerequisites:</strong> <%= preq %></p>
+        <p><strong>Department:</strong> <%= dept %></p>
+        <p><strong>HostID:</strong> <%= uid %></p>
+
+        <a href="/joinproject?pid=<%= id %>">Join</a>
+    </div>
+    
+</div>
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylem.css">
+    <style>
+    option 
+    {
+        background: rgba(255, 255, 255, 0.9);
+        color: #000;
+    }
+    </style>
+    <title>ASK</title>
+</head>
+<body>
+    <div class="hostbody">
+        <div class="h_container">
+            <div class="form-container">
+                <div class="form">
+                    <form id="register-form" action="/asksubmit" method="POST">
+                        <h2>ASK A QUESTION</h2>
+                        <label for="title">Question Title</label>
+                        <input type="title" id="title" name="title" required>
+                        <label for="topic">Topic of the question</label>
+                        <input type="text" id="topic" name="topic" required>
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" rows="8"></textarea>
+                        <label for="department">Department:</label>
+                        <select id="department" name="department" required>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Electrical Engineering">Electrical Engineering</option>
+                            <option value="Mechanical Engineering">Mechanical Engineering</option>
+                            <option value="Smart Manufacturing ">Smart Manufacturing </option>
+                            <option value="Electronics and Communications">Electronics and Communications</option>
+                        </select>
+                    <button type="submit">Ask A question </button>
+                    </form>
+                </div>
+            </div>
+    
+        </div>
+        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<%- include('partials/header.ejs') %>
+<div class="questioncontainer">
+    <div class="questiond">
+        <p><strong>Question ID:</strong> <%= id %></p>
+        <p><strong>Question Title:</strong> <%= title%></p>
+        <p><strong>Question Topic:</strong><%= topic %></p>
+        <p><strong>Description:</strong><%= desc%></p>
+    </div>
+    <h2>Answers:</h2>
+    <div class="ans_container">
+        <% if(locals.Ans) {%>
+            <% Ans.forEach((ans)=>{ %>
+                <div class="ans_project">
+                    <p>Userid: <br> <%= ans.uid %></p>
+                    <p>Answer: <br> <%= ans.answer%></p>
+                </div>
+            <% }) %>
+        <% }else{ %>
+            <h2>No answers given for this question</h2>
+           <% } %> 
+    </div>
+    
+</div>
+<%- include('partials/footer.ejs') %>

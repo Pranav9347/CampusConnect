@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+html,body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    overflow:auto;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand, .nav-link, .btn-outline-primary {
+    color: #fff;
+}
+
+.nav-link:hover, .btn-outline-primary:hover {
+    color: #4cae4c;
+}
+
+.wel {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.wel h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.wel p {
+    font-size: 1.2rem;
+}
+
+.samplecontainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.samplecontainer1 {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+   
+
+}
+
+.sampleq, .samplec {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    backdrop-filter: blur(10px);
+    height: 600px;
+}
+
+.sampleq h3, .samplec h3 ,.project h3 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.project
+{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    backdrop-filter: blur(10px);
+    text-align: center;  
+}
+.project1
+{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    backdrop-filter: blur(10px);
+    text-align: center; 
+
+}
+.display
+{
+    max-height: 300px;
+    overflow:auto;
+    border: black solid ;
+}
+
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+.footer {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+
+.button-animated {
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.button-3d {
+    background: #ff4757;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px #c0392b;
+}
+
+.button-3d:active {
+    box-shadow: 0 2px #c0392b;
+    transform: translateY(3px);
+}
+
+.flex
+{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.flex a
+{
+    padding:10px;
+    margin:10px;
+}
+a{
+    text-decoration: none;
+}
+.lques
+{
+    margin-bottom: 20px; /* Add space between questions */
+    border-bottom: 1px solid #ccc; /* Add a border between questions */
+    padding-bottom: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* width:100%;    
+    height:500px; */
+    backdrop-filter: blur(10px);
+}
+.pdisplay
+{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    backdrop-filter: blur(10px);
+    padding: 0px;
+    position: absolute;
+    left: 620px;
+    /* border: black solid; */
+    height: 650px;
+    width:650px;
+}
+
+.profile h1{
+    font-size: 2.5em;
+    padding: 0px;
+    margin:0px;
+}
+.img{
+    position: absolute;
+    left: 230px;
+    top:10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    height:200px;
+    width:200px;
+}
+.logo img
+{
+    height:200px;
+}
+.img img
+{
+    position: absolute;
+    right: 1px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid black 2px;
+
+}
+.detail
+{
+    position: absolute;
+    bottom: 40px;
+}
+.detail h2
+{
+    padding: 20px;
+}
+
+.hostbody {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+.joinbody {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    height:300px;
+    margin: 0;
+    color: #fff;
+}
+.historybody {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    margin: 0;
+    color: #fff;
+    
+}
+.discussbody {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    height:300px;
+    margin: 0;
+    color: #fff;
+    
+}
+.body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:first baseline;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+    
+}
+.h_container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    backdrop-filter: blur(10px);
+}
+.j_container {
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width:100%;    
+    backdrop-filter: blur(10px);
+}
+.ans_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width:100%;    
+    backdrop-filter: blur(10px);
+}
+.j_container a
+{
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.d_container {
+    display: flex;
+    justify-content: center;
+    margin-top:30px ;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width:8000px;    
+    backdrop-filter: blur(10px);
+}
+
+
+
+.hostbody label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ddd;
+}
+
+.joinbody label 
+{
+    margin-left:10px;
+}
+
+.hostbody input ,textarea , select ,option{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: none;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 16px;
+    backdrop-filter: blur(5px);
+    outline: none;
+    transition: background 0.3s ease;
+}
+.joinbody input , select , .discussbody input,select{
+    width: 250px;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: none;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 16px;
+    backdrop-filter: blur(5px);
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+
+
+.hostbody input:focus, textarea:focus , select:focus , option:focus-visible{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.hostbody button  {
+    width: 100%;
+    padding: 10px;
+    background: #5cb85c;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+.joinbody button{
+    margin-left: 10px;
+    width:100px;
+    padding: 10px;
+    background: #5cb85c;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+.discussbody button{
+    margin-left: 10px;
+    width:100px;
+    padding: 10px;
+    background: #5cb85c;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.hostbody button:hover ,.joinbody button:hover{
+    background: #4cae4c;
+}
+
+.hostbody p {
+    text-align: center;
+    color: #ddd;
+}
+.hostbody h2
+{
+    text-align: center;
+}
+
+.hostbody a{
+    color: #5cb85c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hostbody a:hover {
+    color: #4cae4c;
+    text-decoration: underline;
+}
+
+.questioncontainer
+{
+    width:100%px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.questioncontainer p
+{
+    font-size: 1.5rem;
+}
+
+.question
+{
+    margin:20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width:100%;    
+    height:500px;
+    backdrop-filter: blur(10px);
+}
+.questiond
+{
+    margin:20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width:100%;    
+    backdrop-filter: blur(10px);
+}
+
+.projectcontainer
+{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap:20px;
+}
+.j_project
+{
+
+    margin:20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width:100%;    
+    height:500px;
+    backdrop-filter: blur(10px);
+    font-size: 1.5rem;
+}
+.l_project
+{
+
+    /* margin:20px; */
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width:100%;    
+    height:500px;
+    backdrop-filter: blur(10px);
+    font-size: 1.5rem;
+}
+.ans_project
+{
+
+    margin:20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width:100%;    
+    height:360px;
+    backdrop-filter: blur(10px);
+    font-size: 1.5rem;
+}
+.font
+{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.font1
+{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+span
+{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.button-retro {
+    text-decoration: none;  /* Removes underline */
+    background: #00ff0d;
+    color: #333;
+    padding: 10px 20px;
+    border: 2px solid #00ff0d;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-retro:hover {
+    background: #fff;
+    color: #00ff0d;
+}

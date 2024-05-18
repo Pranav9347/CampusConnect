@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylem.css">
+    <style>
+    option 
+    {
+        background: rgba(255, 255, 255, 0.9);
+        color: #000;
+    }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="hostbody">
+        <div class="h_container">
+            <div class="form-container">
+                <div class="form">
+                    <form id="register-form" action="/hostsubmit" method="POST">
+                        <h2>HOST A PROJECT</h2>
+                        <label for="name">Project Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description" rows="10" required></textarea>
+                        <label for="max_size">Maximum Team Size:</label>
+                        <input type="number" id="max_size" name="max_size" min="1" required>
+                        <label for="prerequisites">Prerequisites:</label>
+                        <textarea id="prerequisites" name="prerequisites" rows="5"></textarea>
+                        <label for="department">Department:</label>
+                        <select id="department" name="department" required>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Electrical Engineering">Electrical Engineering</option>
+                            <option value="Mechanical Engineering">Mechanical Engineering</option>
+                            <option value="Smart Manufacturing ">Smart Manufacturing</option>
+                            <option value="Electronics and Communications">Electronics and Communications</option>
+                        </select>
+                    <button type="submit">Host Project</button>
+                    </form>
+                </div>
+            </div>
+    
+        </div>
+        
+    </div>
+</body>
+
+</html>

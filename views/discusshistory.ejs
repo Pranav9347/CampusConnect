@@ -1,0 +1,31 @@
+<%- include("partials/header.ejs") %>
+
+    
+    <h2 class="font1">Discuss history</h2>
+    
+    <div class="historybody">
+        
+        <div class="j_container">
+            <a href="/questionasked" type="button" class="button-3d">Questions asked by me </a>
+            <a href="/answeredq" type="button" class="button-3d">Questions answered by me</a>
+        </div>
+        
+    </div>
+
+    <div class="d_container">
+      <% if(locals.Question) {%>
+        <% Question.forEach((ques)=>{ %>
+            <div class="j_project">
+                <p>Question Title: <br> <%= ques.title %></p>
+                <p>Question Topic: <br> <%= ques.topic %></p>
+                <p>Description: <br> <%= ques.description %></p>
+                <a href="/checkans?id=<%= ques.q_id %>&title=<%= ques.title %>&topic=<%= ques.topic %>&desc=<%= encodeURIComponent(ques.description) %>">Check Answers</a>
+            </div>
+        <% }) %>
+        <% }else{ %>
+            <h2>select options above </h2>
+            <% } %>
+
+    </div>
+
+ <%- include("partials/footer.ejs") %>

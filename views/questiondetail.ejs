@@ -1,0 +1,17 @@
+<%- include('partials/header.ejs') %>
+<div class="questioncontainer">
+    <div class="question">
+        <p><strong>Question ID:</strong> <%= id %></p>
+        <p><strong>Title:</strong> <%= title %></p>
+        <p><strong>Topic:</strong> <%= topic %></p>
+        <p><strong>Description:</strong> <%= description %></p>
+
+        <!-- Form for submitting answer -->
+        <form id="answerForm" action="/answersubmit" method="POST">
+            <input type="hidden" name="questionId" value="<%= id %>">
+            <textarea name="answer" id="answer" rows="8"></textarea>
+            <button type="submit" class="button-3d">Submit Answer</button>
+        </form>
+    </div>
+</div>
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,48 @@
+<%- include('partials/header.ejs') %>
+<section>
+    <div class="wel">
+        <h2>Welcome to Campus Connect </h2>
+        <p>Connect your questions with campus connect </p>
+    </div>
+
+    <div class="samplecontainer">
+        <div class="sampleq">
+            <h3>Sample Questions</h3>
+            <div class="display">
+                <% Question.forEach((Ques) => { %>
+                    <div class="lques">
+                        <p>Question ID: <%= Ques.q_id %></p>
+                        <p>Title: <%= Ques.title %></p>
+                        <p>Question Description: <%= Ques.description %></p>
+                        <p>Department: <%= Ques.department %></p>
+                        <p>Topic: <%= Ques.topic %></p>
+                        <p>Userid: <%= Ques.userid %></p>
+                    </div>
+                <% }) %>
+            </div>
+            <div>
+                <p>Have answers in your mind or have some question </p>
+                <p>Enter the Discuss page and connect with your peeps or seniors or even teachers </p>
+            </div>
+            <a href="/discuss" type="button" class="button-3d">DISCUSS</a>
+        </div>
+        <div class="samplec">
+            <h3>Top Collaborations</h3>
+            <div class="display">
+                <% Project.forEach((proj)=> { %>
+                    <div class="l_project">
+                        <p>Project Name: <br> <%= proj.p_name %> </p>
+                        <p>Project Description: <br><%= proj.description %> </p>
+                        <p>Project Host UserID: <br> <%= proj.uid %></p>
+                    </div>
+                <% }) %>
+            </div>
+            <div>
+                <p>Have some project to host or just wanna join some projects</p>
+                <p>Enter the Collaborations Page to collaborate</p>
+            </div>
+            <a href="/collaborate" type="button" class="button-3d">COLLABORATE</a>
+        </div>
+    </div>
+</section>
+<%- include('partials/footer.ejs') %>
